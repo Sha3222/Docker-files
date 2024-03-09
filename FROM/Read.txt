@@ -1,0 +1,10 @@
+## FROM
+FROM should be the first instruction in your Dockerfile
+
+FROM <Image>:version
+
+if you won't provide any version then by default it will take the latest version.
+
+ex: FROM almalinux:version 7
+FROM nginx
+
