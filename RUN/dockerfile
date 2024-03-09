@@ -1,4 +1,3 @@
 FROM centos:7
-RUN yum install nginx -y && \
-    useradd -m -r -s /bin/bash Sha123 && \
+RUN useradd -m -r -s /bin/bash Sha123 && \
     groupadd sha
