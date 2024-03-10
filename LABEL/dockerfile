@@ -1,0 +1,4 @@
+FROM almalinux:latest
+RUN yum install node -y
+LABEL Author="sha123" && \
+      info="node installation"

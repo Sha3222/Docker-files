@@ -1,0 +1,8 @@
+## LABEL
+LABEL instruction is useful to give some metadata information.
+
+LABEL is used filter the images
+
+syntax:
+docker images --filter "label=AUTHOR=sha123"
+
