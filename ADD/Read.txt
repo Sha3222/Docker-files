@@ -1,0 +1,21 @@
+## ADD
+
+ADD is same as copy. It is used to copy the files from local to the container/image.
+But it has two extra uses
+
+1. ADD can download the file directly fromm internet
+2. ADD can untar/unzip the file directly into the container.
+
+FROM almalinux:8
+
+ADD https://example.com/myarchive.tar.gz /app/
+
+
+If the source is a URL and it ends with .tar, .tar.gz, .tar.bz2, or .tar.xz, it is automatically unpacked into the destination directory.
+
+FROM almalinux:8
+
+ADD https://example.com/myfile.txt /app/
+
+You can copy files directly from a remote URL.
+
