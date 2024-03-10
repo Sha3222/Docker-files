@@ -1,0 +1,2 @@
+## COPY
+COPY is an instruction used to copy the local files into the image
