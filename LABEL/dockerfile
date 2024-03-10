@@ -1,4 +1,4 @@
 FROM almalinux:latest
-RUN yum install node -y
+RUN yum install nginx -y
 LABEL Author="sha123" \
       info="node installation"
