@@ -1,0 +1,5 @@
+ENTRYPOINT
+This is also used to run the container. But there are few differences.
+1. We can't over-ride the entry point but we can over-ride the CMD.
+2. We can't over-ride the entry point if we try to do so it will go and append the entrypoint command.
+3. If you use CMD and Entrypoint and don't give any command from terminal, CMD acts as argument provider to Entrypoint.
