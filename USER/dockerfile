@@ -1,6 +1,6 @@
 FROM almalinux:latest
 RUN adduser sha123 && \
-    adduser sha123 wheel
+    adduser -g wheel -s /bin/bash -c "adding sha123" -m -d /home/sha123 sha123
 USER sha123
 RUN sudo yum install nginx -y && \
     echo "HI" > \tmp\index.html && \
