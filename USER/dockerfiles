@@ -1,0 +1,8 @@
+FROM almalinux:latest
+RUN adduser sha123
+USER sha123
+RUN yum install nginx -y && \
+    echo "HI" > \temp\index.html
+    rm -rf usr/share/nginx/html
+    cp \temp\index.html usr/share/nginx/html
+CMD ["nginx", "-g" "daemon off;"]

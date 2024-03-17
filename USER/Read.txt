@@ -1,0 +1,7 @@
+##USER
+It is used to run the commands as particular user.
+
+ex:
+FROM almalinux:latest
+USER root
+RUN touch /tmp/file1.txt
