@@ -1,3 +1,4 @@
 FROM almalinux:latest
 RUN yum install nginx -y
-ENTRYPOINT ["echo" , "Hello"]
+CMD ["google"]
+ENTRYPOINT ["ping" , "-c5"]
