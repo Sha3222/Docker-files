@@ -4,5 +4,5 @@ WORKDIR /app
 RUN echo "Hi" > file.html && \
     yum install nginx -y && \
     rm -rf usr/share/nginx/html && \
-    cp file.html usr/share/nginx/html
+    cp /app/file.html usr/share/nginx/html
 CMD ["nginx", "-g", "daemon off;"]
