@@ -1,7 +1,8 @@
 FROM almalinux:latest
-RUN adduser sha123
+RUN adduser sha123 && \
+    adduser sha123 wheel
 USER sha123
-RUN yum install nginx -y && \
+RUN sudo yum install nginx -y && \
     echo "HI" > \tmp\index.html && \
     rm -rf usr/share/nginx/html && \
     cp \tmp\index.html usr/share/nginx/html
