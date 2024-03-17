@@ -1,0 +1,4 @@
+ARG version
+FROM almalinux:${veriosn:-8}
+ARG greetings
+RUN echo ${greetings}

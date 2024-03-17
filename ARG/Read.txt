@@ -1,0 +1,27 @@
+## ARG
+
+ARG is used to supply the variable during the time of the image creation.
+
+ARG is the only instruction used before the FROM.
+
+ARG declared before the FROM can not be access after the FROM
+lets see the example:
+
+ARG VERSION
+FROM almalinux: ${VERSION: -8}
+RUN echo ${version} >>>>>>>>>>>>>>>>>>>>>>>>>Here I can't access the ARG variable.
+
+
+This allows the users to customise the built process without changing the built file.
+
+Example:
+
+FROM almalinux:latest
+ARG a=default_value
+RUN echo "${a}"
+
+
+command: docker build --build-arg a=Hi -t <image-name>:version .
+
+
+
