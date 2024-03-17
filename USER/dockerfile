@@ -4,4 +4,4 @@ RUN yum install nginx -y && \
     echo "HI" > \tmp\index.html && \
     rm -rf usr/share/nginx/html && \
     cp \tmp\index.html usr/share/nginx/html
-CMD ["nginx", "-g" "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]
