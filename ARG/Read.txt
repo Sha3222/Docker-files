@@ -25,3 +25,10 @@ command: docker build --build-arg a=Hi -t <image-name>:version .
 
 
 
+Using the ENV and ARG for best results
+
+ARG version
+FROM almalinux: ${version: -8}
+ARG Greeting= "Hi"
+ENV greet= ${Greeting}
+RUN echo ${Greeting}
