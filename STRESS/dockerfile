@@ -1,0 +1,3 @@
+FROM alamainux
+RUN yum update -y \ yum install stress-ng -y
+CMD ["stress-ng", "--help"]
